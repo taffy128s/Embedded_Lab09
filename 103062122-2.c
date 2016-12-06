@@ -54,7 +54,7 @@ void distanceTask(void *pvParameters) {
     distance = duration * 0.034 / 2;
     Serial.print("distance: ");
     Serial.println(distance);
-    if (distance < 5) stat = 3;
+    if (distance > 5) stat = 3;
     delay(300);
   }
 }
